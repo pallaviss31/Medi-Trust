@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+use App\Livewire\User\Dashboard;
+
+    Route::get('/', Dashboard::class)->name('dashboard');
+ 
